@@ -1,7 +1,6 @@
 .header
 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     box-shadow: 0px 1px 10px rgb(184, 184, 184);
 }
@@ -10,10 +9,9 @@
 {
     background-color: rgb(240, 240, 240);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'robotobold';
+    font-family: 'robotobold', sans-serif;
     margin-top: 5px;
     padding-right: 26px;
     padding-bottom: 2px;
@@ -42,14 +40,14 @@
 
 .explorer h1
 {
-    font-family: 'robotobold';
+    font-family: 'robotobold', sans-serif;
     font-size: 24px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .explorer p
 {
-    font-family: 'robotolight';
+    font-family: 'robotolight', sans-serif;
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -67,7 +65,7 @@
 
 .fonctionnement h2
 {
-    font-family: 'robotobold';
+    font-family: 'robotobold', sans-serif;
     font-size: 23px;
     padding-right: 142px;
     margin-bottom: 9px;
@@ -76,7 +74,6 @@
 .etape
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: -10px;
 }
@@ -89,6 +86,7 @@
     align-items: center;
     background-color: #9356DC;
     color: white;
+    font-family: 'robotoregular', sans-serif;
     font-size: 13px;
     width: 25px;
     height: 25px;
@@ -100,10 +98,9 @@
 .description
 {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'robotobold';
+    font-family: 'robotobold', sans-serif;
     padding-left: 30px;
     font-size: 16px;
 }
@@ -139,14 +136,21 @@
 
 .restaurant h2
 {
-    font-family: 'robotobold';
+    font-family: 'robotobold', sans-serif;
     font-size: 23px;
     margin-bottom: 0px;
     padding-right: 186px;
 }
 
+.restaurant a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .card_restaurant
 {
+    position: relative;
     background-color: white;
     width: 314px;
     height: 218px;
@@ -162,53 +166,83 @@
     object-fit: cover;
 }
 
-.card_body
-{
-    position: relative;
-    left: 12px;
-    bottom: 4px;
-    width: 200px;
-    height: 40px;
-}
-
-.card_title
-{
-    font-family: 'robotobold';
-    font-size: 14px;
-}
-
-.card_district
-{
-    position: relative;
-    font-family: 'robotolight';
-    font-size: 15px;
-    bottom: 14px;
-}
-
-.card_heart
-{
-    position: relative;
-    font-size: 26px;
-    left: 252px;
-    bottom: 68px;
-    width: 20px;
-}
-
-.card_new
+.card_img p
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 195px;
-    left: 230px;
-    font-family: 'robotobold';
+    position: absolute;
+    right: 13px;
+    top: 0;
+    font-family: 'robotobold', sans-serif;
     font-size: 13px;
     background-color: rgb(144, 230, 201);
     border-radius: 2px;
     color: rgb(0, 128, 107);
     width: 75px;
     height: 28px;
-    z-index: 2;
+}
+
+.card_body
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 24px;
+    padding-left: 12px;
+    padding-top: 9px;
+    height: 50px;
+}
+
+.card_title h3
+{
+    font-family: 'robotobold', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.card_district p
+{
+    font-family: 'robotolight', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card_heart
+{
+    align-self: flex-end;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 3px;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px)
+{
+    .restaurant
+    {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-top: 12px;
+        padding-bottom: 30px;
+        height: 590px;
+    }
+
+    .restaurant h2
+    {
+        text-indent: 45px;
+        padding: 0;
+        margin-top: 35px;
+        margin-bottom: 8px;
+        width: 750px;
+    }
+
+    .card_restaurant
+    {
+        margin: 20px;
+    }
+
 }
