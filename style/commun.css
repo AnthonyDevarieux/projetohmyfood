@@ -1,0 +1,146 @@
+@font-face 
+{
+    font-family: 'robotoregular';
+    src: url('police/Roboto-Regular-webfont.eot');
+    src: url('police/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('police/Roboto-Regular-webfont.woff') format('woff'),
+         url('police/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('police/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'robotobold';
+    src: url('police/Roboto-Bold-webfont.eot');
+    src: url('police/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('police/Roboto-Bold-webfont.woff') format('woff'),
+         url('police/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('police/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'robotolight';
+    src: url('police/Roboto-Light-webfont.eot');
+    src: url('police/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Light-webfont.woff2') format('woff2'),
+         url('police/Roboto-Light-webfont.woff') format('woff'),
+         url('police/Roboto-Light-webfont.ttf') format('truetype'),
+         url('police/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    width: 100%;
+}
+
+.logo_header
+{
+    width: 160px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.btn
+{
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    font-family: 'robotoregular';
+    font-size: 15px;
+    width: 215px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 8px rgb(199, 199, 199);
+}
+
+.btn:hover
+{
+    filter: brightness(110%);
+    opacity: 0.8;
+    box-shadow: 0px 3px 12px rgb(146, 146, 146);
+}
+
+.description
+{
+    background-color: rgb(248, 248, 248);
+    width: 270px;
+    height: 75px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 8px rgb(233, 233, 233);
+}
+
+footer
+{
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-right: 135px;
+    font-family: 'robotoregular';
+    font-size: 14px;
+    height: 160px;
+    color: white;
+}
+
+footer img
+{
+    padding-right: 70px;
+    width: 100px;
+    filter: invert(100%) brightness(200%);
+}
+
+.footer_info
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    height: 120px;
+}
+
+.footer_icone_p
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 24px;
+}
+
+.footer_p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 24px;
+}
+
+.fa-handshake-angle
+{
+   width: 11px;
+   font-size: 10px;
+}
+
+footer i
+{
+    margin-right: 12px;
+}
+
+footer p
+{
+    margin: 0px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
