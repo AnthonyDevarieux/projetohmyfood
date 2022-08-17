@@ -1,0 +1,39 @@
+@font-face
+{
+    font-family: 'shrikhand';
+    src: url('police/Shrikhand-Regular.ttf') format('truetype');
+}
+
+.header
+{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.header i
+{
+    color: black;
+    font-size: 22px;
+    padding-top: 22px;
+    padding-bottom: 12px;
+    margin-right: 60px;
+}
+
+.img_restaurant img
+{
+    width: 100%;
+}
+
+.menu h2
+{
+    font-family: 'shrikhand', serif;
+    font-size: 26px;
+}
+
+.menu i
+{
+    margin-left: 35px;
+}
