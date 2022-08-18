@@ -6,34 +6,149 @@
 
 .header
 {
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 60px;
+    padding-right: 70px;
 }
 
 .header i
 {
     color: black;
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 22px;
-    padding-bottom: 12px;
-    margin-right: 60px;
+    padding-bottom: 14px;
+    margin-right: 55px;
 }
 
-.img_restaurant img
+.restaurant
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant img
 {
     width: 100%;
 }
 
-.menu h2
+.restaurant_description
 {
-    font-family: 'shrikhand', serif;
-    font-size: 26px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin-top: -45px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 40px 40px 0px 0px;
 }
 
-.menu i
+.restaurant_description i
 {
-    margin-left: 35px;
+    margin-left: 30px;
+}
+
+h2
+{
+    width: 100%;
+    font-size: 24px;
+    font-family: 'shrikhand';
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.type_plat
+{
+    width: 100%;
+}
+
+h3
+{
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    width: 35px;
+    height: 21px;
+    border-bottom: 3px solid rgb(144, 230, 201);
+    text-transform: uppercase;
+    font-family: 'robotolight';
+}
+
+.plat
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 10px 12px 0px;
+    padding-left: 10px;
+    width: 285px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgb(214, 214, 214);
+}
+
+.plat p
+{
+    margin: 0;
+}
+
+.plat_titre
+{
+    font-family: 'robotobold';
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.plat_description
+{
+    font-family: 'robotoregular';
+    font-size: 12px;
+    margin-top: 6px;
+    color: rgb(75, 75, 75);
+}
+
+.plat_prix
+{
+    font-family: 'robotobold';
+    font-size: 13px;
+    align-self: flex-end;
+    margin-top: 34px;
+    padding-right: 20px;
+}
+
+@media all and (min-width: 768px)
+{
+    h2
+    {
+        padding-left: 160px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .restaurant_description
+    {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .restaurant_description i
+    {
+        margin-left: 140px;
+    }
+
+    .type_plat
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3
+    {
+        font-size: 18px;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+    }
 }
