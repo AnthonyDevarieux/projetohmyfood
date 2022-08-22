@@ -13,12 +13,12 @@
     align-items: center;
     font-family: 'robotobold', sans-serif;
     margin-top: 5px;
-    padding-right: 26px;
+    padding-right: 25px;
     padding-bottom: 2px;
     width: auto;
     height: 42px;
     color: rgb(61, 61, 61);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .localisation i
@@ -59,15 +59,21 @@
     flex-direction: column;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+    padding-bottom: 50px;
+}
+
+.div_fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
 }
 
 .fonctionnement h2
 {
     font-family: 'robotobold', sans-serif;
     font-size: 23px;
-    padding-right: 142px;
     margin-bottom: 9px;
 }
 
@@ -102,19 +108,19 @@
     align-items: center;
     font-family: 'robotobold', sans-serif;
     background-color: rgb(248, 248, 248);
-    width: 270px;
+    width: 275px;
     height: 75px;
     border-radius: 25px;
     box-shadow: 0px 5px 8px rgb(233, 233, 233);
-    padding-left: 30px;
-    font-size: 16px;
+    padding-left: 35px;
+    font-size: 15px;
 }
 
 .fonctionnement_icone
 {
     color: rgb(155, 155, 155);
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .description:hover
@@ -132,19 +138,25 @@
     background-color: rgb(248, 248, 248);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    height: 1000px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.div_restaurant
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
 }
 
 .restaurant h2
 {
     font-family: 'robotobold', sans-serif;
     font-size: 23px;
-    margin-bottom: 0px;
-    padding-right: 186px;
+    margin-bottom: 5px;
 }
 
 .restaurant a
@@ -157,8 +169,9 @@
 {
     position: relative;
     background-color: white;
-    width: 314px;
+    width: 318px;
     height: 218px;
+    margin-top: 15px;
     border-radius: 15px;
     box-shadow: 0px 5px 8px rgb(219, 219, 219);
 }
@@ -229,52 +242,37 @@
     {
         text-align: center;
         width: 100%;
-        padding: 0;
     }
 
-    .restaurant
+    .div_restaurant
     {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
         flex-wrap: wrap;
-        padding: 0;
-        padding-top: 12px;
-        padding-bottom: 30px;
-        height: 590px;
-    }
-
-    .restaurant h2
-    {
-        text-align: center;
-        padding: 0;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        width: 100%;
+        width: 700px;
+        height: 570px;
     }
 
     .card_restaurant
     {
-        margin: 20px;
+        margin: 0;
     }
 
+    .restaurant h2
+    {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 1024px)
 {
-    .fonctionnement
+    .div_fonctionnement
     {
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        margin-bottom: 0;
-    }
-
-    .fonctionnement h2
-    {
-        padding-bottom: 5px;
-        margin: 0;
+        width: 1020px;
     }
 
     .etape
@@ -284,10 +282,21 @@
     }
 }
 
-@media all and (min-width: 1416px)
+@media all and (min-width: 1440px)
 {
     .restaurant
     {
-        height: 350px;
+        padding-bottom: 70px;
+    }
+
+    .div_restaurant
+    {
+        width: 1400px;
+        height: auto;
+    }
+
+    .restaurant h2
+    {
+        margin-bottom: 30px;
     }
 }

@@ -45,7 +45,7 @@ body
 .logo_header
 {
     width: 150px;
-    padding-top: 24px;
+    padding-top: 22px;
     padding-bottom: 12px;
 }
 
@@ -73,14 +73,19 @@ footer
 {
     background-color: rgb(61, 61, 61);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-right: 130px;
-    padding-top: 25px;
     font-family: 'robotoregular', sans-serif;
     font-size: 14px;
-    height: 160px;
+    height: 180px;
     color: white;
+}
+
+.footer
+{
+    width: 295px;
+    height: 80%;
+    padding-top: 14px;
 }
 
 footer a
@@ -91,7 +96,6 @@ footer a
 
 footer img
 {
-    padding-right: 70px;
     width: 100px;
     filter: invert(100%) brightness(200%);
 }
@@ -100,8 +104,7 @@ footer img
 {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-    height: 120px;
+    padding-top: 14px;
 }
 
 .footer_icone_p
@@ -138,88 +141,42 @@ footer i
 
 @media all and (min-width: 768px)
 {
-    footer
+    .footer
     {
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-    }
-
-    footer img
-    {
-        width: 260px;
-        padding-right: 70px;
-    }
-
-    .footer_info
-    {
-        padding-top: 0;
-        height: 100px;
-    }
-}
-
-@media all and (min-width: 1062px)
-{
-    footer
-    {
-        padding-right: 0;
-        font-size: 18px;
-        flex-wrap: wrap;
-    }
-
-    .footer_info
-    {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        height: auto;
-        padding-bottom: 18px;
-        padding-left: 50px;
-    }
-
-    .footer_info p
-    {
-        margin-right: 50px;
+        width: 600px;
     }
 
     footer img
     {
-        padding-top: 25px;
-        padding-right: 400px;
-        padding-left: 400px;
-    } 
-
-    footer i
-    {
-        margin-right: 8px;
-    }
-
-    .fa-handshake-angle
-    {
-        width: 20px;
-        font-size: 18px;
-    }
-}
-
-@media all and (min-width: 1416px)
-{
-    footer
-    {
-        padding-left: 80px;
-    }
-
-    footer img
-    {
-        padding: 0;
+        width: 250px;
     }
 
     .footer_info
     {
-        padding-bottom: 0;
-        padding-left: 80px;
+        padding: 0;
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 1024px)
+{
+    .footer
+    {
+        width: 1000px;
     }
 
-    .footer_info p
+    footer img
     {
-        margin-right: 80px;
+        width: 300px;
+    }
+
+    .footer_info
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 600px;
     }
 }
