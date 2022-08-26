@@ -97,6 +97,7 @@ h3
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
     width: 320px;
     height: 60px;
@@ -107,6 +108,9 @@ h3
 
 .plat p
 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
 }
 
@@ -115,10 +119,85 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 44px;
+    padding-top: 3px;
     padding-left: 10px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    flex: 1;
+}
+
+.plat:hover .details_plat
+{
+    animation: ellipsis_details 0.5s forwards;
+}
+
+@keyframes ellipsis_details 
+{
+    0%
+    {
+        width: 100%;
+    }
+    100%
+    {
+        width: 198px;
+    }   
+}
+
+.valid_plat
+{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(144, 230, 201);
+    border-radius: 0px 10px 10px 0px;
+    width: 0px;
+    height: 100%;
+}
+
+.plat:hover .valid_plat
+{
+    animation: translate_back_icone 0.5s forwards;
+}
+
+@keyframes translate_back_icone 
+{
+    0%
+    {
+        width: 0px;
+    }
+    100%
+    {
+        width: 60px;
+    }   
+}
+
+.valid_plat i
+{
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    transform: rotate(0deg);
+    opacity: 0;
+}
+
+.plat:hover .valid_plat i
+{
+    animation: rotate_icone 0.5s forwards;
+}
+
+@keyframes rotate_icone
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotate(-360deg);
+    }
+    
 }
 
 .plat_titre
@@ -136,10 +215,11 @@ h3
 .plat_prix
 {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
-    padding-bottom: 11px;
-    padding-right: 20px;
     font-family: 'robotobold';
+    width: 50px;
+    height: 42px;
     font-size: 13px;
 }
 
