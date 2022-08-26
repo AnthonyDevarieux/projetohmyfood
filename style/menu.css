@@ -75,6 +75,24 @@ h3
     font-family: 'robotolight';
 }
 
+.type_plat
+{
+    animation: plat_translate 2s forwards;
+}
+
+@keyframes plat_translate
+{
+    0%
+    {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }  
+}
+
 .plat
 {
     display: flex;
@@ -153,7 +171,7 @@ h3
         margin-bottom: 35px;
         font-size: 50px;
         text-align: center;
-        text-indent: 80px;
+        text-indent: 85px;
     }
 
     .restaurant_description i
