@@ -59,6 +59,30 @@ h2
     margin-bottom: 15px;
 }
 
+.remplissage:hover
+{
+    font-weight: bold;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    animation: heart 3s forwards;
+}
+
+@keyframes heart
+{
+    0%
+    {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+}
+
 .restaurant_description i
 {
     margin-left: 35px;
@@ -148,7 +172,7 @@ h3
     display: flex;
     align-items: center;
     color: white;
-    background-color: rgb(144, 230, 201);
+    background-color: #99E2D0;
     border-radius: 0px 10px 10px 0px;
     width: 0px;
     height: 100%;
@@ -195,7 +219,7 @@ h3
     100%
     {
         opacity: 1;
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
     
 }
@@ -240,7 +264,6 @@ h3
         width: 760px;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
